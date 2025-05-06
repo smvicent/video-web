@@ -2,18 +2,27 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Visualización de vídeo HTML5</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Reproducción de Vídeo HTML5</title>
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<h1>smvicent - PR - Reproducción de vídeo compatible</h1>
-		<video controls width="720" preload="auto" poster="img/poster.jpg">
-			<source src="video/smv-clip01.mp4" type="video/mp4" />
-			<source src="video/smv-clip01.webm" type="video/webm" />
-			<source
-				src="video/smv-clip01_av1.webm"
-				type='video/webm; codecs="av01.0.05M.08"'
-			/>
-			Tu navegador no soporta la reproducción de vídeo HTML5.
-		</video>
+		<header>
+			<h1>🎬 Reproducción de Vídeo Compatible - smvicent 🎬</h1>
+		</header>
+		<div class="video-container">
+			<video controls preload="auto" poster="img/poster.jpg">
+				<source src="video/smv-clip01.mp4" type="video/mp4" />
+				<source src="video/smv-clip01.webm" type="video/webm" />
+				<source
+					src="video/smv-clip01_av1.webm"
+					type='video/webm; codecs="av01.0.05M.08"'
+				/>
+				Tu navegador no soporta la reproducción de vídeo HTML5.
+			</video>
+		</div>
 	</body>
 </html>
