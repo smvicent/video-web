@@ -14,12 +14,34 @@
 			<h1>🎬 Reproducción de Vídeo Compatible - smvicent 🎬</h1>
 		</header>
 		<div class="video-container">
-			<video controls preload="auto" poster="img/poster.jpg">
+			<video
+				controls
+				autoplay
+				muted
+				loop
+				playsinline
+				preload="auto"
+				poster="img/poster.jpg"
+				disablepictureinpicture
+				controlslist="nodownload noremoteplayback"
+			>
 				<source src="video/smv-clip01.mp4" type="video/mp4" />
 				<source src="video/smv-clip01.webm" type="video/webm" />
 				<source
 					src="video/smv-clip01_av1.webm"
 					type='video/webm; codecs="av01.0.05M.08"'
+				/>
+				<track
+					src="vtt/es.vtt"
+					kind="subtitles"
+					srclang="es"
+					label="Español"
+					default
+				/>
+				<track
+					src="vtt/chapters.vtt"
+					kind="chapters"
+					label="Capítulos"
 				/>
 				Tu navegador no soporta la reproducción de vídeo HTML5.
 			</video>
